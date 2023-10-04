@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="checkItems(event)">
+            <label>Item Name:</label>
+            <input type="text" id="item" name="itemname" required/>
+            <label>Item Description:</label>
+            <input type="text" id="description" name="itemtype" required/>
+            <label>Cost Of Item:</label>
+            <input type="number" id="cost" name="itemprice" required/>
+            <label>Quantity</label>
+            <input type="number" id="quantity" name="itemquantity" required/>
+            <button>Add Item:</button> 
+        </form>
+        <ul id="listOfItems" ></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="store.js"></script>
+</body>
+</html>
